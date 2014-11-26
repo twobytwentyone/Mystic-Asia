@@ -1,0 +1,9 @@
+<h1>Mystic Asia</h1>
+
+<% @posts.each do |post| %>
+	<h1><%= post.title %></h1>
+	<p><%= post.subtext %></p>
+
+	<p><%= post.date_posted %></p>
+	</hr>
+<% end %>

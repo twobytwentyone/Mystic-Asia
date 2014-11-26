@@ -1,0 +1,17 @@
+<h1>New Posts</h1>
+
+<%= form_for(@post) do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+
+	<%= f.label :subtext %>
+	<%= f.text_field :subtext %>
+
+	<%= f.label :date_posted %>
+	<%= f.date_field :date_posted %>
+
+	<%= f.label :body %>
+	<%= f.text_area :body %>
+
+	<%= f.submit :post %>
+<% end %>
